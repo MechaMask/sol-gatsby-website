@@ -1,7 +1,5 @@
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 
-This is a website for the non profit Software For Love
-Name: Valeria Alshehri
 
 <p align="center">
   <a href="https://www.gatsbyjs.com">
@@ -11,6 +9,12 @@ Name: Valeria Alshehri
 <h1 align="center">
   Gatsby's default starter
 </h1>
+
+This is a website for the non profit Software For Love
+
+Name: Valeria Alshehri
+
+---
 
 Kick off your project with this default boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
 
