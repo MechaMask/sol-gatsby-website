@@ -8,11 +8,18 @@
 import * as React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
+import Navbar from "./navbar"
 
 import Header from "./header"
 import "./layout.css"
 
 const Layout = ({ children }) => {
+  const links = [
+    {url: '/', text: 'Home'},
+    {url: '/page-2', text: 'Page 2'},
+    {url: '/using-typescript', text: 'Type Script'},
+  ];
+
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -25,6 +32,7 @@ const Layout = ({ children }) => {
 
   return (
     <>
+      <Navbar links={links}/>
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
       <div
         style={{
@@ -46,6 +54,7 @@ const Layout = ({ children }) => {
         </footer>
       </div>
     </>
+
   )
 }
 
